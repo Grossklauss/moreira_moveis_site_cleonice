@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2.titulo{
+    color: black;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgb(77, 210, 243);
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    color:black;
+   background-color: white;
+
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #86c8ff;
+    width: 100%;
+    background-color: white;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.navigation .logo {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.logo span {
+    color:  rgb(77, 210, 243);
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    list-style-type: none;
+
+}
+
+.navigation ul li a {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0,5s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navigation ul li a:hover {
+    color: rgb(144, 225, 245);
+    transform: scale(1.05);
+}
+
+
+
+.menu {
+    cursor: pointer;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+    margin: 5px auto;
+    color: black;
+}
+
+header .contato button{
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:  rgba(144, 225, 245, 0.863);
+    border: 0px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: .2s;
+    cursor: pointer;
+}
+
+header .contato button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px  rgba(0, 204, 255, 0.712);
+}
+
+/* estilo do topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1{
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+   color: rgb(77, 210, 243);
+    font-size: 62px;
+}
+
+.topo-do-site .txt-topo-site p{
+    margin: 40px 0px;
+    font-size: 20px;
+}
+
+.btn-contato button{
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:  rgba(144, 225, 245, 0.863);
+    border: 0px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn-contato button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px  rgba(0, 204, 255, 0.712);
+}
+
+/* colocando animação d se mover na logo começo */
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 700px;
+    height: 700px;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/* colocando animação d se mover na logo  fim */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px  rgba(0, 204, 255, 0.712);
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color:rgb(77, 210, 243);
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0px ;
+}
+
+
+
+/* SOBRE */
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: black;
+}
+
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(77, 210, 243) ;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+     text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(144, 225, 245, 0.863);
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0px 6px;
+}
+
+.sobre .txt-sobre .btn-social button:hover{
+    box-shadow: 0px 0px 8px  rgba(143, 218, 237, 0.773);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/*PORTIFOLIO
+
+.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(0, 204, 255, 0.712);
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color:  rgb(77, 210, 243);
+}
+
+.portifolio .flex{
+    justify-content: space-around;
+}
+
+*/
+
+.fixed {
+    background-color:rgb(143, 218, 237, 0.773);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.pagamento p{
+    font-size: 20px;
+}
+
+.inset span{
+    font-size: 15px;
+}
